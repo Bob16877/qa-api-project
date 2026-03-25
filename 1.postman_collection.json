@@ -14,16 +14,11 @@
           "listen": "test",
           "script": {
             "exec": [
-              "pm.test(\"Статус 200: Магазин ответил\", function () {\r",
+              "pm.test(\"Статус 200: Сервер живой\", function () {\r",
               "    pm.response.to.have.status(200);\r",
               "});\r",
               "\r",
-              "pm.test(\"Ответ в формате JSON\", function () {\r",
-              "    pm.response.to.be.withBody;\r",
-              "    pm.response.to.be.json;\r",
-              "});\r",
-              "\r",
-              "pm.test(\"ID товара совпадает\", function () {\r",
+              "pm.test(\"ID поста верный\", function () {\r",
               "    var jsonData = pm.response.json();\r",
               "    pm.expect(jsonData.id).to.eql(1);\r",
               "});\r",
@@ -50,14 +45,12 @@
           }
         ],
         "url": {
-          "raw": "https://fakestoreapi.com/products/1",
-          "protocol": "https",
+          "raw": "{{base_url}}/posts/1",
           "host": [
-            "fakestoreapi",
-            "com"
+            "{{base_url}}"
           ],
           "path": [
-            "products",
+            "posts",
             "1"
           ]
         }
