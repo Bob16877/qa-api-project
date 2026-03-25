@@ -41,20 +41,20 @@
           {
             "key": "key",
             "value": "User-Agent",
-            "type": "text",
-            "disabled": true
+            "type": "text"
           },
           {
             "key": "Value",
-            "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
-            "type": "text",
-            "disabled": true
+            "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "type": "text"
           }
         ],
         "url": {
-          "raw": "{{base_url}}/products/1",
+          "raw": "https://fakestoreapi.com/products/1",
+          "protocol": "https",
           "host": [
-            "{{base_url}}"
+            "fakestoreapi",
+            "com"
           ],
           "path": [
             "products",
